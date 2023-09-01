@@ -49,7 +49,7 @@ class _CustomInfoWindowScreenState extends State<CustomInfoWindowScreen> {
                   children: [
                     Container(
                       decoration: BoxDecoration(
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: NetworkImage("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fcaf%25C3%25A9%2F&psig=AOvVaw3iZ0nML1W6mcfmvuBC2LpH&ust=1693562038648000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMD6uPrPhoEDFQAAAAAdAAAAABAE")
                         ),
                         borderRadius: BorderRadius.circular(10)
@@ -57,9 +57,9 @@ class _CustomInfoWindowScreenState extends State<CustomInfoWindowScreen> {
                     ),
                     Column(
                       children: [
-                        Text("cafe name", style: TextStyle(fontWeight: FontWeight.bold),),
+                        const Text("cafe name", style: TextStyle(fontWeight: FontWeight.bold),),
                         Row(
-                          children: [
+                          children: const [
                             Text("20", style: TextStyle(color: Colors.red),),
                             Icon(Icons.person, color: Colors.red,)
                           ],
